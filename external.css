@@ -114,7 +114,6 @@ a.user-trigger:hover {
 
 .main-menu {
     margin-top: 20px;
-    display: none;
 }
 
 .main-menu ul {
@@ -199,6 +198,9 @@ span.sidebar-toggle {
 }
 
 @media (max-width: 1620px) {
+    .main-menu {
+        display: block;
+    }
     #mainPageContent {
         margin-left: none;
     }
@@ -214,6 +216,9 @@ span.sidebar-toggle {
 }
 
 @media (max-width: 1400px) {
+    .main-menu {
+        display: block;
+    }
     #mainPageContent {
         margin-left: none;
     }
@@ -232,6 +237,9 @@ span.sidebar-toggle {
 }
 
 @media (max-width: 1199px) {
+    .main-menu {
+        display: block;
+    }
     nav.navbar.horizontal-layout.col-lg-12.col-12.p-0 {
         margin-bottom: 0 !important;
         display: none;
