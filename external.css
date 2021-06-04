@@ -21,6 +21,10 @@ aside#sideBar.show {
     transform: translateX(0);
 }
 
+nav.navbar.horizontal-layout.col-lg-12.col-12.p-0 {
+    display: none;
+}
+
 .sidebarCloseOverlay {
     display: none;
     position: fixed;
