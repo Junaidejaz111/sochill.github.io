@@ -71,10 +71,6 @@ aside#sideBar .brand-box a img {
     width: 100%;
 }
 
-#mainPageContent {
-    margin-left: 360px !important;
-}
-
 a.user-trigger {
     display: flex;
     justify-content: space-between;
@@ -235,29 +231,34 @@ span.sidebar-toggle {
 
 @media (max-width: 1620px) {
     #mainPageContent {
-        margin-left: 300px !important;
-    }
-    aside#sideBar {
-        width: 300px;
+        margin-left: none;
     }
     .main-menu ul li a {
         padding: 0px 10px;
+    }
+    nav.navbar {
+        display: block !important;
+    }
+    nav.navbar .nav-bottom {
+        display: none !important;
     }
 }
 
 @media (max-width: 1400px) {
     #mainPageContent {
-        margin-left: 240px !important;
-    }
-    aside#sideBar {
-        width: 240px;
-        padding: 10px 14px;
+        margin-left: none;
     }
     .user-dropmenu .header {
         flex-wrap: wrap;
     }
     .user-dropmenu .header>* {
         padding: 6px 10px;
+    }
+    nav.navbar {
+        display: block !important;
+    }
+    nav.navbar .nav-bottom {
+        display: none !important;
     }
 }
 
