@@ -244,7 +244,7 @@ span.sidebar-toggle {
 
 @media (max-width: 1199px) {
     aside#sideBar {
-        display: none t;
+        display: none;
     }
     .main-menu {
         display: block;
@@ -2365,6 +2365,7 @@ p {
         font-size: 14px;
         border-left: none;
         padding-bottom: 15px;
+        overflow: auto;
     }
     .nav-tabs.nav-justified>li.active>a,
     .nav-tabs.nav-justified>li.active>a:hover,
@@ -2382,6 +2383,7 @@ p {
         left: 35% !important;
         font-size: 32px !important;
         width: 36% !important;
+        overflow: auto;
     }
     #power img {
         width: 100%;
