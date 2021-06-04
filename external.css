@@ -33,6 +33,336 @@ aside#sideBar .brand-box a img {
     width: 100%;
 }
 
+
+/* Sidebar Styles */
+
+aside#sideBar {
+    width: 360px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+aside#sideBar.show {
+    transform: translateX(0);
+}
+
+.sidebarCloseOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, .4);
+}
+
+aside#sideBar .brand-box a img {
+    width: 100%;
+}
+
+#mainPageContent {
+    margin-left: 360px !important;
+}
+
+a.user-trigger {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: #202339;
+    text-decoration: none;
+    padding: 8px 0;
+    align-items: center;
+}
+
+a.user-trigger .text i {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+
+a.user-trigger .icon {
+    position: relative;
+    top: 3px;
+    font-size: 20px;
+}
+
+a.user-trigger:hover {
+    color: #f79520;
+    text-decoration: none;
+}
+
+.user-dropmenu {
+    background: #eee;
+    display: none;
+}
+
+.user-dropmenu .header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.user-dropmenu .header>* {
+    flex: 1;
+    text-align: center;
+    padding: 16px 10px;
+}
+
+.user-dropmenu ul {
+    list-style: none;
+    padding-left: 20px;
+    padding: 0px 0px;
+    color: #202339;
+}
+
+.user-dropmenu ul a {
+    color: #202339;
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.user-dropmenu ul a i {
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+}
+
+.user-dropmenu ul a:hover {
+    color: #f79520;
+    background: #e6e6e6;
+}
+
+.main-menu {
+    margin-top: 20px;
+}
+
+.main-menu ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.main-menu ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    text-decoration: none;
+    outline: 0;
+    font-size: 0.8rem;
+    background: #fff;
+    border-radius: 10px;
+    color: #5f5f61;
+    padding: 0.5rem 0.7rem !important;
+    border-radius: 3rem;
+}
+
+.main-menu ul li a .text i {
+    width: 30px;
+    display: inline-flex;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.main-menu ul li a:hover {
+    background: transparent;
+    color: #f79520;
+}
+
+.main-menu ul li a:hover .text i {
+    margin-right: 4px;
+}
+
+.main-menu ul li a.active {
+    background: linear-gradient(30deg, #f7941e, #eeb066);
+    color: #fff;
+}
+
+.main-menu ul li a .icon {
+    display: none;
+}
+
+.main-menu ul li.has-dropmenu a .icon {
+    display: block;
+}
+
+ul.dropmenu-container {
+    background: #949495;
+    border-radius: 20px;
+    padding: 8px 14px;
+    margin-top: 4px;
+    display: none;
+}
+
+ul.dropmenu-container li {
+    margin: 0;
+}
+
+ul.dropmenu-container li a {
+    border-radius: 10px;
+    background: transparent;
+    padding: 8px;
+    color: #fff;
+}
+
+ul.dropmenu-container li a:hover {
+    background: rgb(247, 148, 31, .3);
+    color: #fff;
+}
+
+span.sidebar-toggle {
+    font-size: 26px;
+    color: #333;
+    margin-left: 14px;
+    display: none;
+}
+
+@media (max-width: 1620px) {
+    #mainPageContent {
+        margin-left: 300px !important;
+    }
+    aside#sideBar {
+        width: 300px;
+    }
+    .main-menu ul li a {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #mainPageContent {
+        margin-left: 240px !important;
+    }
+    aside#sideBar {
+        width: 240px;
+        padding: 10px 14px;
+    }
+    .user-dropmenu .header {
+        flex-wrap: wrap;
+    }
+    .user-dropmenu .header>* {
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    nav.navbar.horizontal-layout.col-lg-12.col-12.p-0 {
+        margin-bottom: 0 !important;
+    }
+    .alert {
+        margin-top: 0 !important;
+    }
+    #history-search input {
+        width: 82% !important;
+    }
+    aside#sideBar {
+        transform: translateX(-100%);
+    }
+    #mainPageContent {
+        margin-left: 0 !important;
+    }
+    nav.navbar {
+        display: block !important;
+    }
+    nav.navbar .nav-bottom {
+        display: none !important;
+    }
+    span.sidebar-toggle {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 991px) {
+    #history-search input {
+        width: 76% !important;
+    }
+    .fuqPage .main-panel .content-wrapper .container>.row>div {
+        min-width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-menu ul li a {
+        font-size: 1rem;
+    }
+    #history-search input {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-statistics .card-body .card-text {
+        text-align: center;
+    }
+    .h3,
+    h3 {
+        font-size: 20px;
+    }
+    #history-search input {
+        width: 75% !important;
+    }
+    .fuqPage .main-panel .content-wrapper .container>.row>div {
+        min-width: 100% !important;
+    }
+}
+
+@media (max-width: 430px) {
+    #history-search input {
+        width: 65% !important;
+    }
+    .fuqPage .main-panel .content-wrapper .container>.row>div {
+        min-width: 100% !important;
+    }
+    .badge {
+        font-size: 10px !important;
+    }
+}
+
+.bm-social-badge {
+    background: url(https://cdn.mypanel.link/30e6b5/aqofnjxur70p6k5r.png) no-repeat;
+    height: 65px;
+    background-size: 100%;
+}
+
+span.text {
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+div#serviceFilterMobile ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#serviceFilterMobile li {
+    width: 100%;
+    border: 1px solid;
+    margin-right: 1rem;
+    padding: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+div#serviceFilterMobile {
+    max-width: 500px;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
