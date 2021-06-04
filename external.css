@@ -1,3 +1,38 @@
+aside#sideBar {
+    width: 360px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+aside#sideBar.show {
+    transform: translateX(0);
+}
+
+.sidebarCloseOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, .4);
+}
+
+aside#sideBar .brand-box a img {
+    width: 100%;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
