@@ -2010,8 +2010,8 @@ p {
         /*width: 36%;*/
     }
     .tab-img i {
-        top: 55px;
-        left: 35%;
+        top: 55px !important;
+        left: 35% !important;
         font-size: 40px;
         width: 36%;
     }
