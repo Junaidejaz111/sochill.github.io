@@ -231,6 +231,7 @@ span.sidebar-toggle {
 @media (max-width: 1199px) {
     nav.navbar.horizontal-layout.col-lg-12.col-12.p-0 {
         margin-bottom: 0 !important;
+        display: none;
     }
     .alert {
         margin-top: 0 !important;
