@@ -2012,8 +2012,8 @@ p {
     .tab-img i {
         top: 55px !important;
         left: 35% !important;
-        font-size: 40px;
-        width: 36%;
+        font-size: 40px !important;
+        width: 36% !important;
     }
     #power img {
         width: 100%;
