@@ -198,6 +198,9 @@ span.sidebar-toggle {
 }
 
 @media (max-width: 1620px) {
+    aside#sideBar {
+        display: none t;
+    }
     .main-menu {
         display: block;
     }
@@ -216,6 +219,9 @@ span.sidebar-toggle {
 }
 
 @media (max-width: 1400px) {
+    aside#sideBar {
+        display: none;
+    }
     .main-menu {
         display: block;
     }
@@ -237,6 +243,9 @@ span.sidebar-toggle {
 }
 
 @media (max-width: 1199px) {
+    aside#sideBar {
+        display: none t;
+    }
     .main-menu {
         display: block;
     }
