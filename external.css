@@ -3,6 +3,18 @@ body {
     padding: 0;
 }
 
+@media (max-width: 767.98px) {
+    #top-banner {
+        /*background-image: url(https://i.imgur.com/T5LSLFW.png);*/
+        background-image: none !important;
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding: 0 Im !important;
+        /*background-size: 800px auto;*/
+        background-size: 1000px auto;
+    }
+}
+
 .dashboard.daymode *,
 .dashboard.nightmode * {
     transition: color 750ms, background 750ms;
