@@ -358,6 +358,9 @@ div#serviceFilterMobile {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
+    scroll-behavior: smooth;
+    overflow-y: scroll!important;
+    -webkit-overflow-scrolling: touch!important;
 }
 
 @media (max-width: 767.98px) {
