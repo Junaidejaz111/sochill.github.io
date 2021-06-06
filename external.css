@@ -2382,6 +2382,10 @@ p {
         /*font-size: 75px;*/
         /*width: 36%;*/
     }
+    #Capa_1 {
+        top: 50px !important;
+        left: 123px !important;
+    }
     .tab-img i {
         top: 63px !important;
         left: 35% !important;
