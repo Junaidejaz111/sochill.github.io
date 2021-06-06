@@ -2383,8 +2383,10 @@ p {
         /*width: 36%;*/
     }
     #Capa_1 {
-        top: 50px !important;
-        left: 123px !important;
+        top: 48px !important;
+        left: 106px !important;
+        height: 30px !important;
+        width: 30px !important;
     }
     .tab-img i {
         top: 63px !important;
